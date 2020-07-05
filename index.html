@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Orbitron|Lobster" rel="stylesheet">
+
+    <title>Wheather app using api</title>
+
+    <style>
+    *{
+        margin:0;
+        padding: 0;
+    }
+    body{
+        background-color: #262626;
+    }
+    #error{
+        color: red;
+        padding: 10px 0;
+    }
+
+.jumbotron{
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0px;
+    height: 80px;
+    font-family: 'Orbitron', sans-serif;
+
+}    
+.row{
+    margin: 0 auto;
+    width:100%;
+}  
+#show{
+    margin: 0 auto;
+    width:50%;
+	color:white;
+    height: 600px ;
+    font-family: 'Courgette', cursive;
+}
+input{
+    padding:4px;
+    width: 70%;
+}
+#search
+{
+width:30%;
+
+}
+.footer{
+    background-color: #4565f1;
+    color: white;
+    height: 60px;
+    padding: 8px 0px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+
+}
+    </style>
+</head>
+<body>
+    <div class="jumbotron">
+        <h2 class="text-center">weather forecast</h2>
+        
+    </div>
+    <div class="container text-center">
+            <div id="error"></div>
+        <div class="form-group inline-form">
+            <div class="row">
+
+                    <input type="text" placeholder="enter a city" name="city" id="city" required>
+                    <button class="btn btn-primary" id="search">search city</button>
+            </div>
+        </div>
+    </div>
+    <div id="show">
+
+    </div>
+    <div class="footer">
+        <h4> copyrights&copy;current weather .com</h4>
+    </div>
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="app.js">
+    </script>
+</body>
+</html>
